@@ -126,6 +126,7 @@ var OperatorHandlers = function($) {
 				if ($(this).val() != before_change) self.field_selected(this);
 				$(this).data('pre_change', $(this).val());
 			}).change();
+			self.initialize_select2(this);
 		});
 		self.field_selected($('.form-row select.query-field').first());
 
